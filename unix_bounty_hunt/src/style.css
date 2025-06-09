@@ -1,0 +1,75 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+#app {
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  min-height: 10%;
+  min-width: 100%;
+}
+
+main {
+  padding-top: 10vh;
+  min-height: 90%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+main h2 {
+  align-self: center;
+}
+
+/* main .upload-btn {
+  width: 5em;
+  align-self: center;
+} */
+
+main .files-box {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 1em;
+  padding: 1rem;
+}
+
+main .files-box p {
+  font-size: 1.5rem;
+}
+
+main ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+main .files-box .file {
+  min-width: 100%;
+  max-height: 100%;
+  padding: 1rem;
+  border-radius: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}

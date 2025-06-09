@@ -1,0 +1,17 @@
+services:
+  frontend:
+    build: .
+    container_name: unix_bounty_hunter
+    tty: true
+    networks:
+      - web-net
+    ports:
+      - "8080:80"
+    volumes:
+      - ./home/Server/logs:/home/ubuntu/Server/logs
+    restart: unless-stopped
+
+networks:
+  web-net:
+    name: tarfilereader-network
+    external: true
